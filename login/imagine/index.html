@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Rotary &mdash; Midtown Bangalore</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,700" rel="stylesheet">
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/jquery-ui.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+  <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+  <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="tipuesearch/tipuesearch_content.js"></script>
+  <link rel="stylesheet" href="tipuesearch/css/tipuesearch.css">
+  <script src="tipuesearch/tipuesearch_set.js"></script>
+  <script src="tipuesearch/tipuesearch.min.js"></script>
+  <script src="js/search.js"></script>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js'></script>
+  <script type='text/javascript'>
+    var publicSpreadsheetUrl =
+      'https://docs.google.com/spreadsheets/d/1Gjcm0AtNbWU2__j8LL3tcEdRcxKF3nbqrqIipuY-RGg/edit?usp=sharing';
+    window.arr = [];
+    window.dat = [];
+
+    function init() {
+      Tabletop.init({
+        key: publicSpreadsheetUrl,
+        callback: showInfo,
+        simpleSheet: true
+      })
+    }
+
+    function showInfo(data, tabletop) {
+      data.forEach(function (data) {
+        arr.push(data.Name);
+        dat.push(data);
+      });
+    }
+    window.addEventListener('DOMContentLoaded', init)
+  </script>
+  <script src="https://www.gstatic.com/firebasejs/7.9.3/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.9.3/firebase-auth.js"></script>
+  <script src="../main.js"></script>
+</head>
+
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+
+  <div id="overlayer"></div>
+  <div class="loader">
+    <div class="spinner-border text-primary" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+  </div>
+
+  <div class="site-wrap" id="home-section">
+
+
+    <header class="site-navbar py-2 js-sticky-header site-navbar-target" role="banner">
+
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-3 col-md-3 col-xl-4  d-block">
+            <h1 class="mb-0 site-logo"><a href="#home-section"><img src="images/logo.jpeg" ,height="50" width="75" /></a></h1>
+          </div>
+
+          <div class="col-12 col-md-9 col-xl-8 main-menu">
+            <nav class="site-navigation position-relative text-right" role="navigation">
+              <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block ml-0 pl-0">
+                <li style="font-weight: bold;font-size: large;">Welcome Rotarian</li>
+                <li class="nav-item">
+                  <a class="nav-link text-primary" href="/login/index.html">Log Out</a>
+                </li>
+              </ul>
+              
+            </nav>
+          </div>
+
+
+          <div class="col-8 col-md-9 d-inline-block d-lg-none ml-md-0">
+            <a class="site-menu-toggle js-menu-toggle float-right ml-3 text-primary " style="font-weight: bold;font-size: large;" href="/login/index.html">Log Out</a>
+            <a href="#" class="site-menu-toggle js-menu-toggle text-black float-right">
+              <p style="font-weight: bold;font-size: large;">Welcome Rotarian</p> 
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+    </header>
+    </br>
+    </br>
+    </br>
+    <div class="container">
+      <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"
+              style="padding-left: 90%; padding-top: 5%;">
+              <span aria-hidden="true" style="font-weight: bold;">&times;</span>
+            </button>
+            <div class="modal-body">
+              <h1 id='fname' class="card-title" style="font-family: 'Simonetta';"></h1>
+              <p class="card-text" style="font-weight: bold;">Joined On : </p>
+              <p class="card-text" id="joined"></p>
+              <p class="card-text" style="font-weight: bold;">Office : </p>
+              <p class="card-text" id="office"></p>
+              <p class="card-text" style="font-weight: bold;">Position : </p>
+              <p class="card-text" id="position"></p>
+              <p class="card-text" style="font-weight: bold;">Email : </p>
+              <p class="card-text" id="email"></p>
+              <p class="card-text" style="font-weight: bold;">Wife : </p>
+              <p class="card-text" id="wife"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content" style="height: 600px; width: 800px;">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"
+              style="padding-left: 90%;padding-top:5px;">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="modal-body">
+              <iframe
+                src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=Asia%2FKolkata&amp;src=dWNjbWF1c29tQGdtYWlsLmNvbQ&amp;src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;src=Y2xhc3Nyb29tMTExODM2NDI3OTE4MTA5MDUxNjI4QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=ZW4uaW5kaWFuI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%23039BE5&amp;color=%23F4511E&amp;color=%234a148c&amp;color=%23009688&amp;showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA"
+                style="border:none" width="100%" height="100%" frameborder="0" scrolling="no"></iframe>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="site-blocks-cover" style="overflow: hidden;">
+        <div class="site-section" id="features-section">
+          <div class="container">
+            <div class="row mb-5 justify-content-center text-center" data-aos="fade-up">
+            </div>
+            <div class="row align-items-stretch">
+              <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up">
+                <div class="unit-4 d-block">
+                  <div class="unit-4-icon mb-3">
+                    <span class="icon-wrap"><span class="text-primary icon-search"></span></span>
+                  </div>
+                  <div>
+                    <h3>Family Connect</h3>
+                    <p>Get To Know People From Rotary Family.</p>
+                    <form class="form-group" autocomplete="off" onsubmit="Search();return false;">
+                      <div class="autocomplete" style="width:200px;">
+                        <input id="myInput" class="form-control input-sm" type="text" name="myCountry"
+                          placeholder="Name">
+                        <div style="padding-top: 10px;">
+                          <button type="submit" class="btn btn-secondary" data-toggle="modal"
+                            data-target="#exampleModalCenter">
+                            Submit
+                          </button>
+                        </div>
+
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="unit-4 d-block">
+                  <div class="unit-4-icon mb-3">
+                    <span class="icon-wrap"><span class="text-primary icon-calendar"></span></span>
+                  </div>
+                  <div>
+                    <h3>Events Calendar</h3>
+                    <p>Get To Know Important Dates Of The Rotary Members.</p>
+                    <button type="button" class="btn btn-secondary" data-toggle="modal"
+                      data-target="#exampleModalCenter2">
+                      Show Calendar
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="unit-4 d-block">
+                  <div class="unit-4-icon mb-2">
+                    <span class="icon-wrap"><span class="text-primary icon-payment"></span></span>
+                  </div>
+                  <div>
+                    <h3>Payments</h3>
+                    <p>Membership Payments</p>
+                    <p><a href="#">Learn More</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="footer py-2 text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <p class="mb-0">
+              Copyright &copy;
+              <script>
+                document.write(new Date().getFullYear());
+              </script> All rights reserved </p>
+          </div>
+        </div>
+      </div>
+      </footer>
+    </div>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <script src="js/bootstrap-datepicker.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+
+    <script>
+      function Search() {
+        var name = document.getElementById('myInput').value;
+        dat.forEach(function (data) {
+          if (name == data.Name) {
+            fname.innerHTML = data.Name;
+            joined.innerHTML = data.joined;
+            office.innerHTML = data.officename;
+            position.innerHTML = data.position;
+            email.innerHTML = data.email1;
+            wife.innerHTML = data.wifename;
+          }
+        });
+      }
+    </script>
+    <script>
+      // Get the modal
+      var modal = document.getElementById("myModal2");
+
+      // Get the button that opens the modal
+      var btn = document.getElementById("myBtn2");
+
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close2")[0];
+
+      // When the user clicks the button, open the modal 
+      btn.onclick = function () {
+        modal.style.display = "block";
+      }
+
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function () {
+        modal.style.display = "none";
+      }
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
+    </script>
+
+
+    <script src="js/main.js"></script>
+    <script>
+      autocomplete(document.getElementById("myInput"), arr);
+    </script>
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyCw8sZd3TC_Ur40jgovDpzpW5hVUJicg5I",
+        authDomain: "dash-3436a.firebaseapp.com",
+        databaseURL: "https://dash-3436a.firebaseio.com",
+        projectId: "dash-3436a",
+        storageBucket: "dash-3436a.appspot.com",
+        messagingSenderId: "371112272391",
+        appId: "1:371112272391:web:ee94c9e5cae49b6802c0a2"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Rotary Bangalore Midtown</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+
+  <!-- Font Icon -->
+  <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.9.3/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.9.3/firebase-auth.js"></script>
+  <script src="./main.js"></script>
+</head>
+<div>
+
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-dark rounded fixed-top">
+      <a class="navbar-brand mr-auto" href="../index.html"><img width="60" alt="Rotary logo"
+          src="../img/header/rotary-bang.png"></a>
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarsExample09"
+        aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="navbar-collapse collapse nav-blue" id="navbarsExample09">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="../about-us/index.html" id="dropdown09" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">About Us</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown09">
+              <a class="dropdown-item" href="../about-us/index.html">World of Rotary International</a>
+              <a class="dropdown-item" href="../about-us/overview-rbm/index.html">Overview of Rotary Bangalore Midtown</a>
+              <a class="dropdown-item" href="../about-us/our-team/index.html">Our Team</a>
+              <a class="dropdown-item" href="../about-us/our-members/index.html">Our Members</a>
+              <a class="dropdown-item" href="/blog/index.html">Our Blogs</a>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="../Get Involved/index.html">Get Involved</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../programs/index.html">Our Programs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/rotaractor/index.html">Rotaractors</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../contact/index.html">Become A friend</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../login/index.html">Log In</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html"><img width="40" src="../img/header/rotary_inc.svg" alt=""></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <div class="main-content"></div>
+
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-12 col-md-6">
+        <form class="form-group" autocomplete="off" onsubmit="Login();return false;">
+          <h1 class="form-title">Sign In</h1>
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <h1 class="form-ins">Enter your email</h1>
+              </div>
+              <div class="w-100"></div>
+              <div class="col"><input type="email" class="input100" name="your_email" id="your_email" /><span
+                  class="focus-input100"></span></div>
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <h1 class="form-ins">Enter your password</h1>
+              </div>
+              <div class="w-100"></div>
+              <div class="col wrap-input100 "><input type="password" class="input100" name="your_pass"
+                  id="your_pass" /><span class="focus-input100"></span></div>
+            </div>
+          </div>
+          <a href="../forgot-pass/index.html">
+            <div class="forgot-text">Forgot your password ? Click here</div>
+          </a>
+          <div class="sign-in-group">
+            <input type="submit" id="sign-in" value="Login">
+          </div>
+        </form>
+      </div>
+      <div class="col-12 col-md-6">
+        <img src="images/signin-image.jpg" alt="sing up image" class="sign-image">
+      </div>
+    </div>
+  </div>
+
+
+  <div class="footer bg-blue" align="middle">
+    <img width="80" src="../img/header/rotary-bang.png" alt="" class="rotary-logo-footer">
+    <div class="footer-links-tab">
+      <ul >
+        <li><a href="../signup/index.html" target="_blank" rel="noopener noreferrer">Join Rotary</a></li>
+        <li><a href="#" target="_blank" rel="noopener noreferrer">Serve with Us</a></li>
+        <li><a href="../index.html#gallery" rel="noopener noreferrer">Share with Us</a></li>
+        <li><a href="../Get Involved/index.html" target="_blank" rel="noopener noreferrer">Get Involved</a></li>
+        </ul>
+    </div>
+          <div class="socialmedia wow jackInTheBox">
+              <ul>
+                    <li><a href="#"><img src="../img/header/social/instagram.svg"  alt="instagram"></a></li>
+                    <li><a href="https://www.facebook.com/Rotary-Bangalore-Midtown-Covid-19-Support-103604814675315/?__tn__=%2Cd%2CP-R&eid=ARDye12e8fxHKQSM0TYhrdoBecfsxQQU5DG1fFGxlZ_uBR8uqzJIChMf5rmkDGIOFez40h1Tn5fnd12V"><img src="../img/header/social/fb.svg"  alt="facebook"></a></li>
+                  </ul>
+                </div>
+
+            <div class="copyright-text">
+                © 2020 Rotary Bangalore Midtown. All Rights Reserved.
+            </div>
+          </div>
+   </div>
+<script>
+  window.onload = function () {
+    initApp();
+  };
+</script>
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="style.js"></script>
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCw8sZd3TC_Ur40jgovDpzpW5hVUJicg5I",
+    authDomain: "dash-3436a.firebaseapp.com",
+    databaseURL: "https://dash-3436a.firebaseio.com",
+    projectId: "dash-3436a",
+    storageBucket: "dash-3436a.appspot.com",
+    messagingSenderId: "371112272391",
+    appId: "1:371112272391:web:ee94c9e5cae49b6802c0a2"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+
+
+
+</body>
+
+</html>

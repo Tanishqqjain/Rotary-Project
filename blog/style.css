@@ -1,0 +1,146 @@
+.bt {
+    border-top-style: solid !important;
+    border-top-width: 1px !important;
+}
+
+.bb {
+    border-bottom-style: solid !important;
+    border-bottom-width: 1px !important;
+}
+
+.b--black-10 {
+    border-color: rgba(0, 0, 0, .1) !important;
+}
+
+.db {
+    display: block !important;
+}
+
+.flex {
+    display: flex !important;
+}
+
+.flex-column {
+    flex-direction: column !important;
+}
+
+.order-1 {
+    order: 1 !important;
+}
+
+.order-2 {
+    order: 2 !important;
+}
+
+.athelas {
+    font-family: athelas, georgia, serif !important;
+}
+
+.lh-title {
+    line-height: 1.25 !important;
+}
+
+.lh-copy {
+    line-height: 1.5 !important;
+}
+
+.mw7 {
+    max-width: 48rem !important;
+}
+
+.w-100 {
+    width: 100% !important;
+}
+
+.gray {
+    color: #777 !important;
+}
+
+.pv4 {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+}
+
+.ph3 {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+}
+
+.mb4 {
+    margin-bottom: 2rem !important;
+}
+
+.mt0 {
+    margin-top: 0 !important;
+}
+
+.mv0 {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+.ttu {
+    text-transform: uppercase !important;
+}
+
+.f3 {
+    font-size: 1.5rem !important;
+}
+
+.f5 {
+    font-size: 1rem !important;
+}
+
+.f6 {
+    font-size: .875rem !important;
+}
+
+.center {
+    margin-right: auto !important;
+    margin-left: auto !important;
+}
+
+@media screen and (min-width: 30em) {
+    .flex-row-ns {
+        flex-direction: row !important;
+    }
+
+    .order-1-ns {
+        order: 1 !important;
+    }
+
+    .order-2-ns {
+        order: 2 !important;
+    }
+
+    .w-40-ns {
+        width: 40% !important;
+    }
+
+    .w-60-ns {
+        width: 60% !important;
+    }
+
+    .pl3-ns {
+        padding-left: 1rem !important;
+    }
+
+    .pr3-ns {
+        padding-right: 1rem !important;
+    }
+
+    .mb0-ns {
+        margin-bottom: 0 !important;
+    }
+}
+
+@media screen and (min-width: 60em) {
+    .ph0-l {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    .f4-l {
+        font-size: 1.25rem !important;
+    }
+}

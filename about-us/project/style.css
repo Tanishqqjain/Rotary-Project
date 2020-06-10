@@ -1,0 +1,29 @@
+
+        .f6 {
+    font-size: .875rem;
+}
+.fw6 {
+    font-weight: 600;
+}
+.f2 {
+    font-size: 2.25rem;
+}
+.measure {
+    max-width: 30em;
+}
+.lh-title {
+    line-height: 1.25;
+}
+.fw9 {
+    font-weight: 900;
+}
+
+
+@media screen and (min-width: 60em) {
+    .measure-l {
+        max-width: 30em;
+    }
+    .f-subheadline-l {
+        font-size: 5rem;
+    }
+}

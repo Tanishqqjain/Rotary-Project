@@ -1,0 +1,120 @@
+html{
+    scroll-behavior: smooth;
+}
+
+.contact-side{
+    margin: 1rem;
+    padding: 1rem;
+}
+
+input[type="text"]{
+    width: 90%;
+}
+
+input[type="text"]:focus{
+    width: calc(80% + 2px);
+}
+
+input[type="email"]{
+    width: 90%;
+}
+
+input[type="email"]:focus{
+    width: calc(80% + 2px);
+}
+
+input[type="password"]{
+    width: 90%;
+}
+
+input[type="password"]:focus{
+    width: calc(8% + 2px);
+}
+
+select{
+    width: 90%;
+    }
+
+select:focus{
+        width: calc(80% + 2px);
+    }
+
+ .mapouter{
+     text-align:right;max-width: 80%;margin:0 auto;margin-top: 5rem;margin-bottom: 5rem;
+}
+.gmap_canvas {
+    box-shadow: 0px 15px 30px rgba(0, 51, 160, 0.305);
+    border-radius: 1rem;
+    margin: 0 auto;
+    overflow: hidden;
+    max-width: 80%;
+}
+
+.bottom-side{
+    border-radius: 1rem;
+    padding: 3rem;
+    margin-bottom: 3rem;
+}
+
+.contact-1{
+    color:var(--main-color);
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.contact-quote{
+    line-height: 2rem;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+.left-side{
+    margin-top:6rem;
+}
+
+.det{
+    margin-bottom: 1.5rem;
+    font-size:1rem;
+    color:#000;
+}
+
+.det i{
+    color:var(--main-color);
+    margin-right: 1rem;
+}
+textarea{
+    width: 90%;
+    border: 2px solid #000;
+    border-radius: 3px;
+    margin-bottom: 2rem;
+    padding:.6rem; 
+    padding-top:.8rem;
+    padding-bottom: .8rem;
+    color:#000;
+    transition:.4s all ease-in-out;
+}
+
+textarea:focus{
+    border: 2px solid var(--main-color);
+    color:#000;
+    width: calc(80% + 2px);
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+@media (max-width: 769px) {
+    input[type="submit"]{
+        width: 50%;
+    }
+
+    .contact-1{
+        color:var(--main-color);
+        font-size: 2rem;
+        font-weight: 600;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+}

@@ -1,0 +1,30 @@
+.upper-image{
+    height: 25vh;
+    width:100%;
+}
+.lower-image{
+    height: 50vh;
+    width:100%;
+}
+
+@media screen and (min-width:30em) and (max-width:60em) {
+    .upper-image{
+        height: 25vh;
+        width:100%;
+    }
+    .lower-image{
+        height: 40vh;
+        width:100%;
+    }
+}
+
+@media screen and (min-width:60em) {
+    .upper-image{
+        height: 50vh;
+        width:100%;
+    }
+    .lower-image{
+        height: 50vh;
+        width:100%;
+    }
+}

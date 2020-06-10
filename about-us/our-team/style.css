@@ -1,0 +1,112 @@
+/* .mem-about{
+    background: #fff;
+    width: 240px;
+    padding: 1rem;
+    color:#000;
+    margin-top:1rem;
+    border-radius: 1rem;
+    transition:.4s all ease-in-out;
+}
+
+.mem-about:hover{box-shadow: 0px 15px 30px rgba(0, 51, 160, 0.305);    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s; } */
+
+  .hehe{
+    text-align: start;
+    margin-bottom: 3rem;
+  }
+  .ba {
+    border-style: solid;
+    border-width: 1px;
+}
+
+.b--black-10 {
+    border-color: rgba(0, 0, 0, .1);
+}
+
+.b--black-05 {
+    border-color: rgba(0, 0, 0, .05);
+}
+
+.br3 {
+    border-radius: .5rem;
+}
+
+.br-100 {
+    border-radius: 100%;
+}
+
+.dib {
+    display: inline-block;
+}
+
+.fw4 {
+    font-weight: 400;
+}
+
+.h4 {
+    height: 8rem;
+}
+
+.mw5 {
+    max-width: 16rem;
+}
+
+.w4 {
+    width: 8rem;
+}
+
+.gray {
+    color: #777;
+}
+
+.bg-white {
+    background-color: #fff;
+}
+
+.pa2 {
+    padding: .5rem;
+}
+
+.pa3 {
+    padding: 1rem;
+}
+
+.mb2 {
+    margin-bottom: .5rem;
+}
+
+.mt0 {
+    margin-top: 0;
+}
+
+.mv3 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.tc {
+    text-align: center;
+}
+
+.f3 {
+    font-size: 1.5rem;
+}
+
+.f5 {
+    font-size: 1rem;
+}
+
+.center {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media screen and (min-width: 30em) {
+    .pa4-ns {
+        padding: 2rem;
+    }
+}
+

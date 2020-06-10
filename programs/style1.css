@@ -1,0 +1,199 @@
+.ba {
+    border-style: solid;
+    border-width: 1px;
+}
+
+.bt {
+    border-top-style: solid;
+    border-top-width: 1px;
+}
+
+.b--black-20 {
+    border-color: rgba(0, 0, 0, .2);
+}
+
+.br1 {
+    border-radius: .125rem;
+}
+
+.br-100 {
+    border-radius: 100%;
+}
+
+.bw1 {
+    border-width: .125rem;
+}
+
+.top-1 {
+    top: 1rem;
+}
+
+.right-1 {
+    right: 1rem;
+}
+
+.db {
+    display: block;
+}
+
+.b {
+    font-weight: bold;
+}
+
+.h1 {
+    height: 1rem;
+}
+
+.lh-solid {
+    line-height: 1;
+}
+
+.link {
+    text-decoration: none;
+    transition: color .15s ease-in;
+}
+
+.link:link, .link:visited {
+    transition: color .15s ease-in;
+}
+
+.link:hover {
+    transition: color .15s ease-in;
+}
+
+.link:active {
+    transition: color .15s ease-in;
+}
+
+.link:focus {
+    transition: color .15s ease-in;
+    outline: 1px dotted currentColor;
+}
+
+.mw5 {
+    max-width: 16rem;
+}
+
+.w1 {
+    width: 1rem;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.black-40 {
+    color: rgba(0, 0, 0, .4);
+}
+
+.gray {
+    color: #777;
+}
+
+.white {
+    color: #fff;
+}
+
+.dark-blue {
+    color: #00449e;
+}
+
+.bg-dark-blue {
+    background-color: #00449e;
+}
+
+.hover-blue:hover {
+    color: #357edd;
+}
+
+.hover-blue:focus {
+    color: #357edd;
+}
+
+.hover-bg-blue:hover {
+    background-color: #357edd;
+}
+
+.hover-bg-blue:focus {
+    background-color: #357edd;
+}
+
+.pa2 {
+    padding: .5rem;
+}
+
+.pa3 {
+    padding: 1rem;
+}
+
+.pv1 {
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+}
+
+.ph3 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.mv1 {
+    margin-top: .25rem;
+    margin-bottom: .25rem;
+}
+
+.no-underline {
+    text-decoration: none;
+}
+
+.tc {
+    text-align: center;
+}
+
+.f6 {
+    font-size: .875rem;
+}
+
+.center {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.hide-child .child {
+    opacity: 0;
+    transition: opacity .15s ease-in;
+}
+
+.hide-child:hover  .child, .hide-child:focus  .child, .hide-child:active .child {
+    opacity: 1;
+    transition: opacity .15s ease-in;
+}
+
+.grow {
+    -moz-osx-font-smoothing: grayscale;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    transition: transform .25s ease-out;
+}
+
+.grow:hover, .grow:focus {
+    transform: scale(1.05);
+}
+
+.grow:active {
+    transform: scale(.9);
+}
+
+.bg-animate, .bg-animate:hover, .bg-animate:focus {
+    transition: background-color .15s ease-in-out;
+}
+
+@media screen and (min-width: 30em) {
+    .pa5-ns {
+        padding: 4rem;
+    }
+}
+
