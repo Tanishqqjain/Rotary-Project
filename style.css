@@ -650,3 +650,6 @@ div.footer > img.rotary-logo-footer{
 
 /* End ofheader and footer modification */
  
+.socialmedia.wow.jackInTheBox{
+  visibility: visible !important;
+}
