@@ -79,7 +79,7 @@ data = {
         },
         {
             "name": "Varadu Seshamani",
-            "img": "./img/",
+            "img": "./img/VARADU SELF FOTO (1)-1.png",
             "position": "coopted"
         },
         {
@@ -114,7 +114,7 @@ team_members.innerHTML = ``;
 
 for (let i = 0; i < data["members"].length; i++) {
     team_members.innerHTML = team_members.innerHTML + `
-<article class="mw5 center bg-white br3 pa3 pa4-ns mv3 ba b--black-10 shadow">
+<article class="mw5 col-md-4 col-12 center bg-white br3 pa3 pa4-ns mv3 ba b--black-10 shadow">
     <div class="tc">
       <img src="${data["members"][i]["img"]}" class="br-100 h4 w4 dib ba b--black-05 pa2" >
       <h1 class="f3 mb2">${data["members"][i]["name"]}</h1>
