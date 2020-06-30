@@ -3,99 +3,109 @@ let team_members = document.getElementById("team_members");
 data = {
     "members": [
         {
-            "name": "Rtn Kamal Bhandari",
-            "img": "./img/Rtn_Kamal_Bhandari.png",
+            "name": "Ravi Nedungadi",
+            "img": "./img/Ravi Nedungadi.jpg",
             "position": "President"
         },
         {
-            "name": "Rtn Kshama Bhatia",
-            "img": "./img/Rtn_Kshama_Bhatia.png",
+            "name": "Kamal Bhandari",
+            "img": "./img/kamal self formal.png",
             "position": "Immediate Past President"
         },
         {
-            "name": "Rtn Ravi Nedungadi",
-            "img": "./img/Rtn_Ravi_Nedungadi.png",
-            "position": "President Elect & Director-Club Services"
+            "name": "Srikanth Bhagvat",
+            "img": "./img/SRIKANTH - SELF PIC 1.png",
+            "position": "President Elect"
         },
         {
-            "name": "Rtn Rohitesh Hamirwasia",
-            "img": "./img/Rtn_Rohitesh_Hamirwasia.png",
+            "name": "Atul Kaushal",
+            "img": "./img/ATUL KAUSHAL SELF PIC.JPG",
+            "position": "V P"
+        },
+        {
+            "name": "Palani Loganathan",
+            "img": "./img/PALANI SELF.JPG - formal.jpeg",
             "position": "Hon. Secretary"
         },
         {
-            "name": "Rtn Gagan Bihari",
-            "img": "./img/Rtn_Gagan_Bihari.png",
+            "name": "Anil Lala",
+            "img": "./img/ANIL LALA - SELF FOTO.png",
             "position": "Hon. Joint Secretary"
         },
         {
-            "name": "Rtn Sunil Mysore",
-            "img": "./img/Rtn_Sunil_Mysore.png",
-            "position": "Sgt-At-Arms"
-        },
-        {
-            "name": "Rtn Aditya Shroff",
-            "img": "./img/Rtn_Aditya_Shroff.png",
+            "name": "Uday Masturlal",
+            "img": "./img/UDAY MASTURLAL - SELF PIC.jpeg",
             "position": "Hon. Treasurer"
         },
         {
-            "name": "Rtn Punit Jalan",
-            "img": "./img/Rtn_Punit_Jalan.png",
-            "position": "Director-Community Services"
+            "name": "Deepak Pinto",
+            "img": "./img/DEEPAK PINTO SELF FOTO.jpg",
+            "position": "Sargent"
         },
         {
-            "name": "Rtn Farook Mahmood",
-            "img": "./img/Rtn_Farook_Mahmood.png",
-            "position": "Director-Vocational Services"
+            "name": "Punith Jalan",
+            "img": "./img/PUNITH JALAN -DIRECTOR COMMUNITY SERVICE - SELF FOTO.jpeg",
+            "position": "Commty Serv"
         },
         {
-            "name": "Rtn PP Quresh Merchant",
-            "img": "./img/Rtn_PP_Quresh_Merchant.png",
-            "position": "Director-International Services"
+            "name": "Seema Sibal",
+            "img": "./img/SEEMA SIBAL SELF PIC 5.jpeg",
+            "position": "TEACH"
         },
         {
-            "name": "Rtn Gyan Bhandari",
-            "img": "./img/Rtn_Gyan_Bhandari.png",
-            "position": "Director-New Generation"
+            "name": "Rakesh Sharma",
+            "img": "./img/RAKESH SHARMA - SELF FOTO.jpeg",
+            "position": "Vocational"
         },
         {
-            "name": "Rtn Seema Sibbal",
-            "img": "./img/Rtn_Seema_Sibbal.png",
-            "position": "Director-TEACH"
+            "name": "Farook Mahmood",
+            "img": "./img/FAROOK MAHMOOD - SEELF PIC.jpg",
+            "position": "International Service"
         },
         {
-            "name": "Rtn Deepak Pinto",
-            "img": "./img/Rtn_Deepak_Pinto.png",
-            "position": "Director-Rotary Foundation"
+            "name": "Jayata Jhaveri",
+            "img": "./img/JAYATA JHAVERI SELF FOTO.jpg",
+            "position": "Youth Services"
         },
         {
-            "name": "Rtn PP Nadeem Ahmed",
-            "img": "./img/Rtn_PP_Nadeem_Ahmed.png",
-            "position": "Co Opted Director"
+            "name": "Sunil Mysore",
+            "img": "./img/SUNIL MYSORE - SELF PIC.jpeg",
+            "position": "Membership"
         },
         {
-            "name": "Rtn PP Deepak Malik",
-            "img": "./img/Rtn_PP_Deepak_Malik.png",
-            "position": "Co Opted Director"
+            "name": "Aditya Shroff",
+            "img": "./img/ADITYA SHROFF SELF PIC BACKGROUND CHANGE.jpeg",
+            "position": "TRF"
         },
         {
-            "name": "Rtn PP AVS Murthy",
-            "img": "./img/Rtn_PP_AVS_Murthy.png",
-            "position": "Permanent Invitee to The Board"
+            "name": "Varadu Seshamani",
+            "img": "./img/",
+            "position": "coopted"
         },
         {
-            "name": "Rtn PP Satish Manandi",
-            "img": "./img/Rtn_PP_Satish_Manandi.png",
-            "position": "Permanent Invitee to The Board"
+            "name": "Manandi Satish",
+            "img": "./img/SATISH MANANDI - CO-OPTED DIRECTOR SELF FOTO - EDITED BACKGROUND.jpeg",
+            "position": "coopted"
         },
         {
-            "name": "PDG B R Vishwanath Setty",
-            "img": "./img/PDG_B_R_Vishwanath_Setty.png",
-            "position": "Mentor to the Board"
+            "name": "M G Pramod",
+            "img": "./img/M G PRAMOD - SELF FOTO.jpeg",
+            "position": "Mentor"
         },
         {
-            "name": "Rtn Arun Chamaria",
-            "img": "./img/Rtn_Arun_Chamaria.png",
-            "position": "Charitable Trust Treasurer"
+            "name": "Vishwanath Setty",
+            "img": "./img/Vishwanath Setty - SELF FOTO.jpeg",
+            "position": "Club Trainer"
+        },
+        {
+            "name": "Nadeem Ahmed",
+            "img": "./img/NADEEM AHMED - PERMANENT INVITEE - SELF FOTO.jpeg",
+            "position": "Permant Invitee"
+        },
+        {
+            "name": "Suresh Bhatia",
+            "img": "./img/SURESH BHATIA - SELF FOTO - PPT.jpeg",
+            "position": "Permant Invitee"
         },
     ]
 };
