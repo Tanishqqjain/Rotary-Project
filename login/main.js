@@ -31,7 +31,7 @@ function Login() {
 function initApp() {
   firebase.auth().onAuthStateChanged(function (user) {
     if (user) {
-      window.location = './imagine/index.html';
+      console.log('Signned In');
     } else {
       console.log('Sign Out');
     }
