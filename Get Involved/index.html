@@ -88,7 +88,25 @@
             projects - projects that eradicate polio, promote peace, and improve developing communities.
           </p>
           <p class="donate-auote wow slideInUp">Give Where the need is greatest !</p>
-          <button class="btn btn-donate wow slideInUp" type="button">Donate</button>
+          <button id="donate" class="btn btn-donate wow slideInUp" type="button" data-placement="right" title="Tooltip on right">Donate</button>
+          <div id="donate_details">
+                <!-- <div class="alert alert-primary" role="alert" >
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="alert-heading">Payment Gateway is coming soon</h4> <hr>
+                    <h5>You can donate to</h5>
+                    <p>
+                      Rotary Club of Bangalore Midtown Charitable Trust.
+                    </p>
+                    <p class="mb-0">
+                      Bank : HDFC Bank <br>
+                      Branch : K H Road <br>
+                      Account No : 50100094656570 <br>
+                      IFSC Code : HDFC0001206
+                    </p>
+                </div> -->
+          </div>
         </div>
 
         <div class="col-12 col-md-6 order-md-2">
@@ -113,7 +131,7 @@
                     <h5 class="my-0 font-weight-normal">Why should I donate to The Rotary Foundation? </h5>
                   </div>
                   <div class="card-body">
-                    <p clas"my-0 font-weight-normal">Giving works because Rotary works. We are proud that 90.8 percent of donations go straight to supporting our service projects.</p>
+                    <p class="my-0 font-weight-normal">Giving works because Rotary works. We are proud that 90.8 percent of donations go straight to supporting our service projects.</p>
                   </div>
                 </div>
                 <div class="card mb-4">
@@ -121,7 +139,7 @@
                     <h5 class="my-0 font-weight-normal">How does The Rotary Foundation use donations?  </h4>
                   </div>
                   <div class="card-body">
-                    <p clas"my-0 font-weight-normal">Our 35,000 clubs carry out sustainable humanitarian service projects. Using donations like yours, we’ve wiped out 99 percent of all polio cases. Your donations train future peacemakers, support clean water, and strengthen local economies.</p>
+                    <p class="my-0 font-weight-normal">Our 35,000 clubs carry out sustainable humanitarian service projects. Using donations like yours, we’ve wiped out 99 percent of all polio cases. Your donations train future peacemakers, support clean water, and strengthen local economies.</p>
                   </div>
                 </div>
                 <div class="card mb-4">
@@ -129,23 +147,10 @@
                     <h5 class="my-0 font-weight-normal">What impact can one donation have on the world?  </h5>
                   </div>
                   <div class="card-body">
-                    <p clas"my-0 font-weight-normal">It can save a life. A child can be protected from polio with as little as 60 cents. Our partners make your donation go even farther. For every $1 Rotary commits to polio eradication, the Bill & Melinda Gates Foundation has committed $2.</p>
+                    <p class="my-0 font-weight-normal">It can save a life. A child can be protected from polio with as little as 60 cents. Our partners make your donation go even farther. For every $1 Rotary commits to polio eradication, the Bill & Melinda Gates Foundation has committed $2.</p>
                   </div>
                 </div>
               </div>
-              <!-- <div class="container">
-                <div class="row donation-table-imgs">
-                  <div class="col-12 col-md-6">
-                    <img src="https://www.rotary.org/sites/default/files/styles/w_600/public/Proof-Charity-Navigator_EN.png?itok=Gx7gMrsh" alt="">
-                  </div>
-                  <div class="col-12 col-md-6">
-                    <img src="https://www.rotary.org/sites/default/files/styles/w_600/public/TRF-percentage-spent_EN.png?itok=iKCWs_la" alt="">
-                  </div>
-                </div>
-              </div> -->
-              <!-- <div class="donation-table-imgs">
-              <img src="https://www.rotary.org/sites/default/files/styles/w_400/public/TRF-R_LOGO_REVERSED.png?itok=mUpwgPqw" alt="" style="margin: 0 auto;">
-            </div> -->
             </div>
           </div>
   </div>
@@ -188,6 +193,30 @@
   <script src="style.js"></script>
   <script>
     new WOW().init();
+    $('#donate').click(()=>{
+      $('#donate_details').empty();
+      $('#donate_details').append(`<div class="alert alert-primary" role="alert" >
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="alert-heading">Payment Gateway is coming soon</h4>
+                    <hr>
+                    <h5>You can donate to</h5>
+                    <p>
+                      Rotary Club of Bangalore Midtown Charitable Trust.
+                    </p>
+                    <p class="mb-0">
+                      Bank : HDFC Bank <br>
+                      Branch : K H Road <br>
+                      Account No : 50100094656570 <br>
+                      IFSC Code : HDFC0001206
+                    </p>
+                </div>`);
+    });
+
+    $('#alert_close').click(()=>{
+      $('#donate_details').hide();
+    });
   </script>
 </body>
 
