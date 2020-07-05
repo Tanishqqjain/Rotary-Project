@@ -141,10 +141,30 @@
       <div class="info" >
         <h1>Recent & Ongoing Events</h1>
       </div>
-      <div class="row" id="cards">
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="card">
+              <img src="./img/dia.jpeg" style="height:350px">
+              <div class="card-body">
+                <h5 class="card-title">Dialysis A Day</h5>
+                <p class="card-text"><small class="text-muted">Starting from July 1st 2020</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
       </div>
+
     </div>
-    <div class="container" >
+    <div class="container" style="margin-top: 10rem;">
       <div class="info">
         <h1 style="letter-spacing: .1em !important;">Journal</h1>
       </div>
@@ -174,6 +194,11 @@
               <p class="description">Laxmi is associated with the Rotary Bangalore Midtown as the official Cause
                 Ambassador for skin donation...
               </p>
+              <p class="description"><a
+                  href="https://thelogicalindian.com/exclusive/laxmi-agarwal-skin-donation-campaign/">Read
+                  More</a>
+              </p>
+
 
             </div>
           </div>
@@ -244,26 +269,19 @@
     var db = firebase.firestore();
     db.collection('Product').get().then((doc) => {
       doc.forEach((x) => {
-        $('#cards').append(
-          `<div class="column">
-            <div class="post-module">
-              <div class="thumbnail">
-                <img src=`+ x.data()['Image'] + ` />
-              </div>
-              <div class="post-content">
-                <h1 class="title">`+ x.data()['Heading'] + `</h1>
-                <h2 class="sub_title">`+ x.data()['Location'] + `</h2>                
-                <p class="description">`+ x.data()['Details'] + `</p>
-                <div class="post-meta"><span class="timestamp"><i class="fa fa-clock-">o</i>
-                  `+ x.data()['Date'] + `</span>
-                </div>
-              </div>
-            </div>
-          </div>`
-
+        $('.carousel-inner').append(
+          `<div class="carousel-item">
+            <div class="card">             
+                  <img src=`+ x.data()['Image'] + ` style="height:350px">             
+                <div class="card-body">
+                  <h5 class="card-title">`+ x.data()['Heading'] + `</h5>
+                  <p class="card-text">`+ x.data()['Details'] + `</p>
+                  <p class="card-text"><small class="text-muted">`+ x.data()['Location'] + `</small></p>
+                  <p class="card-text"><small class="text-muted">`+ x.data()['Date'] + `</small></p>
+                </div>          
+          </div>
+        </div>`
         )
-
-
       })
     });
   </script>
