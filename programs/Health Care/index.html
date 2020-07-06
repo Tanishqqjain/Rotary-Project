@@ -1,88 +1,132 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
 
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Rotary Bangalore Midtown</title>
 
-  <title>Rotary Bangalore Midtown</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+    />
+    <link rel="stylesheet" href="../../style.css" />
+    <link rel="stylesheet" href="../../css/responsive.css" />
+    <link rel="stylesheet" href="../../css/homepage.css" />
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-  <link rel="stylesheet" href="../../style.css">
-  <link rel="stylesheet" href="../../css/responsive.css">
-  <link rel="stylesheet" href="../../css/homepage.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-firestore.js"></script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-firestore.js"></script>
+    <!-- Floating Button -->
+    <link rel="stylesheet" href="css/FloatingButton.css" />
+  </head>
 
-  <!-- Floating Button -->
-  <link rel="stylesheet" href="css/FloatingButton.css">
+  <body>
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-dark rounded fixed-top">
+        <a class="navbar-brand" href="../../index.html"
+          ><img
+            width="60"
+            alt="Rotary logo"
+            src="../../img/header/rotary-bang.png"
+        /></a>
 
+        <button
+          class="navbar-toggler collapsed"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarsExample09"
+          aria-controls="navbarsExample09"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
+        <div class="navbar-collapse collapse nav-blue" id="navbarsExample09">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../../index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="../../about-us/index.html"
+                id="dropdown09"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >About Us</a
+              >
+              <div class="dropdown-menu" aria-labelledby="dropdown09">
+                <a class="dropdown-item" href="../../about-us/index.html"
+                  >World of Rotary International</a
+                >
+                <a
+                  class="dropdown-item"
+                  href="../../about-us/overview-rbm/index.html"
+                  >Overview of Rotary Bangalore Midtown</a
+                >
+                <a
+                  class="dropdown-item"
+                  href="../../about-us/our-team/index.html"
+                  >Our Team</a
+                >
+                <a
+                  class="dropdown-item"
+                  href="../../about-us/our-members/index.html"
+                  >Our Members</a
+                >
+                <a class="dropdown-item" href="../../blog/index.html"
+                  >Our Blogs</a
+                >
+              </div>
+            </li>
 
-
-
-</head>
-
-<body>
-  <div class="container">
-    <nav class="navbar navbar-expand-lg navbar-dark rounded fixed-top">
-      <a class="navbar-brand" href="../../index.html"><img width="60" alt="Rotary logo"
-          src="../../img/header/rotary-bang.png"></a>
-      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarsExample09"
-        aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="navbar-collapse collapse nav-blue" id="navbarsExample09">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="../../index.html">Home</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="../../about-us/index.html" id="dropdown09" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">About Us</a>
-            <div class="dropdown-menu" aria-labelledby="dropdown09">
-              <a class="dropdown-item" href="../../about-us/index.html">World of Rotary International</a>
-              <a class="dropdown-item" href="../../about-us/overview-rbm/index.html">Overview of Rotary Bangalore
-                Midtown</a>
-              <a class="dropdown-item" href="../../about-us/our-team/index.html">Our Team</a>
-              <a class="dropdown-item" href="../../about-us/our-members/index.html">Our Members</a>
-              <a class="dropdown-item" href="../../blog/index.html">Our Blogs</a>
-            </div>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="../../Get Involved/index.html">Get Involved</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../../programs/index.html">Our Programs</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../../rotaractor/index.html">Youth Connect</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../../contact/index.html">Become A friend</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../../login/index.html">Log In</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../../login/index.html"><img width="40" src="img/header/rotary_inc.svg"
-                alt=""></a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </div>
-  <!-- <div class="alert alert-warning alert-dismissible fade show mb-0" role="alert" style="margin-top: 5.75rem; padding-right: 6rem;">
+            <li class="nav-item">
+              <a class="nav-link" href="../../Get Involved/index.html"
+                >Get Involved</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../programs/index.html"
+                >Our Programs</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../rotaractor/index.html"
+                >Youth Connect</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../contact/index.html"
+                >Become A friend</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../login/index.html">Log In</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../login/index.html"
+                ><img width="40" src="img/header/rotary_inc.svg" alt=""
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <!-- <div class="alert alert-warning alert-dismissible fade show mb-0" role="alert" style="margin-top: 5.75rem; padding-right: 6rem;">
     In these tough situtations, which world is going through pandemic, it becomes highly important that we members <strong> join the community </strong> and make the world a beter place to live in.
     <button type="button" class="m-2 float-right text-center btn btn-light btn-sm"
       style="position: absolute; top: 0; right: 0; bottom: 0; ">
@@ -93,51 +137,125 @@
   </button> 
   </div> -->
 
-  <div class="main-content  mt-0">
-    <div id="floattoit"></div>
-    <div class="container-fluid py-2 mt-2" >
-      <div style="margin-top: 5.71rem;">
-        <div class="card">
-          <div class="card-header" id="headingOne">
-            <h5 class="mb-0">
-              <button style="letter-spacing: .1em; text-decoration: none !important;" class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                <h5 style="letter-spacing: .1em; text-decoration: none !important;">Mental Health</h5>
-              </button>
-            </h5>
-          </div>
-      
-          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-            <div class="card-body">
-              <h5 style="letter-spacing: .1em; text-decoration: none !important;"> Manasi Project</h5>
-              <div class="text-justify">
-                “Project Maanasi at Mugalur” is a joint humanitarian initiative of Rotary Bangalore   Midtown, Rotary Howard West and St. Johns Medical College to provide quality community  mental health care in rural India. Today the “Maanasi Clinic" at Mugalur village is  serving poor women and children with varying degrees of mental illness by providing  medical care to patients from 206 villages, 8 districts around Bangalore with a reach of   6 million households.
-              </div>
+    <div class="main-content mt-0">
+      <div id="floattoit"></div>
+      <div class="container-fluid py-2 mt-2">
+        <div style="margin-top: 5.71rem;">
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h5 class="mb-0">
+                <button
+                  style="
+                    letter-spacing: 0.1em;
+                    text-decoration: none !important;
+                  "
+                  class="btn btn-link"
+                  data-toggle="collapse"
+                  data-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  <h5
+                    style="
+                      letter-spacing: 0.1em;
+                      text-decoration: none !important;
+                    "
+                  >
+                    Mental Health
+                  </h5>
+                </button>
+              </h5>
             </div>
-            <a target="_blank" href="http://www.projectmaanasi.org/" class="btn btn-primary float-right mr-3 mb-3">Visit website &#8594;</a>
+
+            <div
+              id="collapseOne"
+              class="collapse show"
+              aria-labelledby="headingOne"
+              data-parent="#accordion"
+            >
+              <div class="card-body">
+                <h5
+                  style="
+                    letter-spacing: 0.1em;
+                    text-decoration: none !important;
+                  "
+                >
+                  Manasi Project
+                </h5>
+                <div class="text-justify">
+                  “Project Maanasi at Mugalur” is a joint humanitarian
+                  initiative of Rotary Bangalore Midtown, Rotary Howard West and
+                  St. Johns Medical College to provide quality community mental
+                  health care in rural India. Today the “Maanasi Clinic" at
+                  Mugalur village is serving poor women and children with
+                  varying degrees of mental illness by providing medical care to
+                  patients from 206 villages, 8 districts around Bangalore with
+                  a reach of 6 million households.
+                </div>
+              </div>
+              <a
+                target="_blank"
+                href="http://www.projectmaanasi.org/"
+                class="btn btn-primary float-right mr-3 mb-3"
+                >Visit website &#8594;</a
+              >
+            </div>
           </div>
         </div>
-        
-      </div>
-      <div class="mt-3">
-        <div class="card">
-          <div class="card-header" id="headingOne">
-            <h5 class="mb-0">
-              <button style="letter-spacing: .1em; text-decoration: none !important;" class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                <h5 style="letter-spacing: .1em; text-decoration: none !important;">Physical health</h5>
-              </button>
-            </h5>
-          </div>
-      
-          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-            <div class="card-body">
-              <h5 style="letter-spacing: .1em; text-decoration: none !important;"> Charitable Dispensary Project</h5>
-              <hr>
+        <div class="mt-3">
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h5 class="mb-0">
+                <button
+                  style="
+                    letter-spacing: 0.1em;
+                    text-decoration: none !important;
+                  "
+                  class="btn btn-link"
+                  data-toggle="collapse"
+                  data-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  <h5
+                    style="
+                      letter-spacing: 0.1em;
+                      text-decoration: none !important;
+                    "
+                  >
+                    Physical health
+                  </h5>
+                </button>
+              </h5>
+            </div>
 
-              <div class="text-justify">
-               Charitable Dispensary in Gotigere and HSIS is a result of continuous & honest efforts by Rotary Bangalore Midtown.  Here we offer great services to poor & needy on a charitable basis at very less cost. Our Vision is providing inclusive health services to poor and economically backward people at the most affordable price.
-               Click the button below to know more information about our charitable dispensary .
-              </div>
-              <!-- <h5>
+            <div
+              id="collapseOne"
+              class="collapse show"
+              aria-labelledby="headingOne"
+              data-parent="#accordion"
+            >
+              <div class="card-body">
+                <h5
+                  style="
+                    letter-spacing: 0.1em;
+                    text-decoration: none !important;
+                  "
+                >
+                  Charitable Dispensary Projects
+                </h5>
+                <hr />
+
+                <div class="text-justify">
+                  Charitable Dispensary in Gottigere and HSIS is a result of
+                  continuous & honest efforts by Rotary Bangalore Midtown. Here
+                  we offer great services to poor & needy on a charitable basis
+                  at very less cost. Our Vision is providing inclusive health
+                  services to poor and economically backward people at the most
+                  affordable price. Click the button below to know more
+                  information about our charitable dispensary .
+                </div>
+                <!-- <h5>
                 Gottigere:
               </h5>
               <div class="text-justify">
@@ -155,107 +273,183 @@
                 A dispensary at Mosque Road, budgeted outlay of around lakhs. Around 7500 patients are treated in one month. Free Diabetic camp along with a talk on Diabetes prevention by Abbot was organized and 150  people were benefited.
 
               </div> -->
-
-            </div>
-            <a href="../../about-us/project/charitableProject.html" class="btn btn-primary float-right mr-3 mb-3">For more info &#8594;</a>
-          </div>
-          <hr>
-          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-            <div class="card-body">
-              <h5 style="letter-spacing: .1em; text-decoration: none !important;">Victoria Skin Donation Project</h5>
-              <hr>
-              <div class="text-justify">
-                Rotary Skin Bank is the first and the only Skin Bank in Karnataka, it is also the First Skin Bank in the Government Hospital, established and supported by NGO’s in the entire country. The NGO’s behind this much needed facility are Rotary Bangalore Midtown(a premium 100% Paul Harris Rotary Club)Skin Bank’s intention is to save thousands of burn and trauma victims but also to relieve the excruciating pain that these victims suffer otherwise as a result of burnt skin and underlying tissues. The NGO’s behind this  Skin Bank realized the need for such a facility in Bangalore.
               </div>
+              <a
+                href="../../about-us/project/charitableProject.html"
+                class="btn btn-primary float-right mr-3 mb-3"
+                >For more info &#8594;</a
+              >
             </div>
-            <a href="https://skinbankbangalore.in/" target="_balnk" class="btn btn-primary float-right mr-3 mb-3">Visit website &#8594;</a>
-            
+            <hr />
+            <div
+              id="collapseOne"
+              class="collapse show"
+              aria-labelledby="headingOne"
+              data-parent="#accordion"
+            >
+              <div class="card-body">
+                <h5
+                  style="
+                    letter-spacing: 0.1em;
+                    text-decoration: none !important;
+                  "
+                >
+                  Skin Bank at Victoria Hospital
+                </h5>
+                <hr />
+                <div class="text-justify">
+                  Rotary Skin Bank is the first and the only Skin Bank in
+                  Karnataka, it is also the First Skin Bank in the Government
+                  Hospital, established and supported by NGO’s in the entire
+                  country. The NGO’s behind this much needed facility are Rotary
+                  Bangalore Midtown(a premium 100% Paul Harris Rotary Club)Skin
+                  Bank’s intention is to save thousands of burn and trauma
+                  victims but also to relieve the excruciating pain that these
+                  victims suffer otherwise as a result of burnt skin and
+                  underlying tissues. The NGO’s behind this Skin Bank realized
+                  the need for such a facility in Bangalore.
+                </div>
+              </div>
+              <a
+                href="https://skinbankbangalore.in/"
+                target="_balnk"
+                class="btn btn-primary float-right mr-3 mb-3"
+                >Visit website &#8594;</a
+              >
+            </div>
           </div>
         </div>
-        
       </div>
-      
-    </div>
-    <div class="container">
-      <div class="pb-3">
-        <h1 class="what-heading">Special Programs</h1>
+      <div class="container">
+        <div class="pb-3">
+          <h1 class="what-heading">Ongoing Projects</h1>
+        </div>
+        <div class="row" id="cards" style="margin-top: 2rem;"></div>
       </div>
-      <div class="row" id="cards" style="margin-top: 2rem;">
-      </div>
-    </div>
-    <div class="footer bg-blue" align="middle">
-      <img width="80" src="../../img/header/rotary-bang.png" alt="" class="rotary-logo-footer">
-      <div class="footer-links-tab">
-        <ul>
-          <li><a href="../../signup/index.html" target="_blank" rel="noopener noreferrer">Join Rotary</a></li>
-          <li><a href="../../volunteer/index.html" target="_blank" rel="noopener noreferrer">Serve with Us</a></li>
-          <li><a href="../../index.html#gallery" rel="noopener noreferrer">Share with Us</a></li>
-          <li><a href="../../Get Involved/index.html" target="_blank" rel="noopener noreferrer">Get Involved</a></li>
-        </ul>
-      </div>
-      <div class="socialmedia wow jackInTheBox">
-        <ul>
-          <li><a href="https://instagram.com/rotarybangaloremidtown?igshid=88vdi90406s9" target="_blank"><img src="../../img/header/social/instagram.svg" alt="instagram"></a></li>
-          <li><a
-              href="https://www.facebook.com/Rotary-Bangalore-Midtown-Covid-19-Support-103604814675315/?__tn__=%2Cd%2CP-R&eid=ARDye12e8fxHKQSM0TYhrdoBecfsxQQU5DG1fFGxlZ_uBR8uqzJIChMf5rmkDGIOFez40h1Tn5fnd12V" target="_blank" ><img
-                src="../../img/header/social/fb.svg" alt="facebook"></a></li>
-        </ul>
-      </div>
+      <div class="footer bg-blue" align="middle">
+        <img
+          width="80"
+          src="../../img/header/rotary-bang.png"
+          alt=""
+          class="rotary-logo-footer"
+        />
+        <div class="footer-links-tab">
+          <ul>
+            <li>
+              <a
+                href="../../signup/index.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Join Rotary</a
+              >
+            </li>
+            <li>
+              <a
+                href="../../volunteer/index.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Serve with Us</a
+              >
+            </li>
+            <li>
+              <a href="../../index.html#gallery" rel="noopener noreferrer"
+                >Share with Us</a
+              >
+            </li>
+            <li>
+              <a
+                href="../../Get Involved/index.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Get Involved</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="socialmedia wow jackInTheBox">
+          <ul>
+            <li>
+              <a
+                href="https://instagram.com/rotarybangaloremidtown?igshid=88vdi90406s9"
+                target="_blank"
+                ><img
+                  src="../../img/header/social/instagram.svg"
+                  alt="instagram"
+              /></a>
+            </li>
+            <li>
+              <a
+                href="https://www.facebook.com/Rotary-Bangalore-Midtown-Covid-19-Support-103604814675315/?__tn__=%2Cd%2CP-R&eid=ARDye12e8fxHKQSM0TYhrdoBecfsxQQU5DG1fFGxlZ_uBR8uqzJIChMf5rmkDGIOFez40h1Tn5fnd12V"
+                target="_blank"
+                ><img src="../../img/header/social/fb.svg" alt="facebook"
+              /></a>
+            </li>
+          </ul>
+        </div>
 
-      <div class="copyright-text">
-        © 2020 Rotary Bangalore Midtown. All Rights Reserved.
+        <div class="copyright-text">
+          © 2020 Rotary Bangalore Midtown. All Rights Reserved.
+        </div>
       </div>
     </div>
-  </div>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
-  <script src="style.js"></script>
-  <script>
-    var firebaseConfig = {
-      apiKey: "AIzaSyCw8sZd3TC_Ur40jgovDpzpW5hVUJicg5I",
-      authDomain: "dash-3436a.firebaseapp.com",
-      databaseURL: "https://dash-3436a.firebaseio.com",
-      projectId: "dash-3436a",
-      storageBucket: "dash-3436a.appspot.com",
-      messagingSenderId: "371112272391",
-      appId: "1:371112272391:web:4896bf73c80e2cda02c0a2"
-    };
-    firebase.initializeApp(firebaseConfig);
-    var db = firebase.firestore();
-    db.collection('Projects').where("Category", "==", "Health Issues").get().then((doc) => {
-      doc.forEach((x) => {
-        $('#cards').append(
-          `<div class="column">
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="style.js"></script>
+    <script>
+      var firebaseConfig = {
+        apiKey: "AIzaSyCw8sZd3TC_Ur40jgovDpzpW5hVUJicg5I",
+        authDomain: "dash-3436a.firebaseapp.com",
+        databaseURL: "https://dash-3436a.firebaseio.com",
+        projectId: "dash-3436a",
+        storageBucket: "dash-3436a.appspot.com",
+        messagingSenderId: "371112272391",
+        appId: "1:371112272391:web:4896bf73c80e2cda02c0a2",
+      };
+      firebase.initializeApp(firebaseConfig);
+      var db = firebase.firestore();
+      db.collection("Projects")
+        .where("Category", "==", "Health Issues")
+        .get()
+        .then((doc) => {
+          doc.forEach((x) => {
+            $("#cards").append(
+              `<div class="column">
             <div class="post-module">
               <div class="thumbnail">
-                <img src=`+ x.data()['Image'] + ` />
+                <img src=` +
+                x.data()["Image"] +
+                ` />
               </div>
               <div class="post-content">
-                <h1 class="title">`+ x.data()['Title'] + `</h1>                             
-                <p class="description">`+ x.data()['Description'] + `</p>
+                <h1 class="title">` +
+                x.data()["Title"] +
+                `</h1>                             
+                <p class="description">` +
+                x.data()["Description"] +
+                `</p>
               </div>
             </div>
           </div>`
+            );
+          });
+        });
+    </script>
 
-        )
-
-
-      })
-    });
-  </script>
-
-  <script>
-    new WOW().init();
-  </script>
-
-
-</body>
-
+    <script>
+      new WOW().init();
+    </script>
+  </body>
 </html>
